@@ -23,7 +23,7 @@ public class Callable_test1 {
 		ExecutorService pool=Executors.newFixedThreadPool(threads);
 		Future<Integer> future=pool.submit(new MyCallable()); //Future is a placeholder  for returned value
 		
-		int i=future.get();//its an blocking process, it will block the excetution till Future get the value
+		int i=future.get();//its an blocking method , it will block the main thread excetution till Future get the value 
 		//i put sleep for 3 sec means it will not proceed further from line 26 for 3 sec
 		System.out.println(i);
 		pool.shutdown();
