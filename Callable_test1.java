@@ -21,7 +21,7 @@ public class Callable_test1 {
 		// TODO Auto-generated method stub
 		int threads=1;
 		ExecutorService pool=Executors.newFixedThreadPool(threads);
-		Future<Integer> future=pool.submit(new MyCallable());
+		Future<Integer> future=pool.submit(new MyCallable()); //Future is a placeholder  for returned value
 		
 		int i=future.get();//its an blocking process, it will block the excetution till Future get the value
 		//i put sleep for 3 sec means it will not proceed further from line 26 for 3 sec
