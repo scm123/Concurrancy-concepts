@@ -20,6 +20,7 @@ public class DemoExecutorService1 {
 			service.execute(new Task());
 		}
 		System.out.println("Thread  "+Thread.currentThread().getName());
+		service.shutdown();
 	}
 
 }
