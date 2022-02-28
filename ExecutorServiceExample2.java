@@ -24,6 +24,7 @@ public class ExecutorServiceExample2 {
 			service.execute(new CpuIntensiveTask());
 		}
 		System.out.println("Thread  "+Thread.currentThread().getName());
+		service.shutdown();
 	}
 
 }
